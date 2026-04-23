@@ -101,6 +101,18 @@
   .hero {
     padding-top: 44px;
   }
+
+  /* Google Calendar modal improvements for mobile */
+  div[style*="position: fixed"][style*="z-index"] {
+    max-width: 95vw !important;
+    width: 95vw !important;
+    max-height: 90vh !important;
+  }
+
+  div[style*="position: fixed"][style*="z-index"] iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
