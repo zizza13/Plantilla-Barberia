@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Barbería en Guadalajara: cortes clásicos, barba y afeitado tradicional. Reserva tu cita en línea." />
+  <title>Barber Shop Elite | Barbería en Guadalajara</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdftzHQQSgVj4J2b6Z6vZtqG0NfWQv7r7F0p3s0b4aU2m9o1mG0x8mN2o8dD7wQv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Barber Shop Elite</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Navegación principal">
+        <a class="nav__link" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#servicios">Servicios</a>
+        <a class="nav__link" href="#galeria">Galería</a>
+        <a class="nav__link" href="#nosotros">Sobre Nosotros</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+        <a class="btn btn--gold nav__cta" href="#reservas">Reservar Cita</a>
+      </nav>
+    </div>
+
+    <div class="backdrop" data-backdrop hidden></div>
+  </header>
+
+  <main id="inicio" class="main">
+    <section class="hero" aria-label="Presentación">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Guadalajara, Jalisco</p>
+          <h1 class="hero__title">BARBER SHOP <span class="hero__title-accent">ELITE</span></h1>
+          <p class="hero__subtitle">Estilo. Precisión. Tradición.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold btn--lg" href="#reservas">Agendar Cita Ahora</a>
+            <a class="btn btn--ghost btn--lg" href="#servicios">Ver Servicios</a>
+          </div>
+          <div class="hero__meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Centro, Guadalajara</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Lun–Sáb 10:00–20:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" aria-label="Información destacada">
+          <div class="hero-card__row">
+            <span class="hero-card__label">Reserva en 1 minuto</span>
+            <span class="hero-card__value">Google Calendar</span>
+          </div>
+          <div class="hero-card__row">
+            <span class="hero-card__label">Cortes desde</span>
+            <span class="hero-card__value">$250 MXN</span>
+          </div>
+          <div class="hero-card__row">
+            <span class="hero-card__label">Ubicación</span>
+            <span class="hero-card__value">GDL</span>
+          </div>
+          <a class="btn btn--gold btn--block" href="#reservas">Reservar</a>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="servicios" aria-label="Servicios">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Servicios</h2>
+          <p class="section__subtitle">Detalles claros, precios honestos y un acabado impecable.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-scissors"></i></div>
+            <h3 class="service__title">Corte Clásico</h3>
+            <p class="service__desc">Corte a tijera o máquina con terminados limpios.</p>
+            <div class="service__meta">
+              <span class="pill">$250 MXN</span>
+              <span class="pill pill--muted">30 min</span>
+            </div>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-user-ninja"></i></div>
+            <h3 class="service__title">Barbado Completo</h3>
+            <p class="service__desc">Diseño y perfilado para una barba con carácter.</p>
+            <div class="service__meta">
+              <span class="pill">$200 MXN</span>
+              <span class="pill pill--muted">25 min</span>
+            </div>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-razor"></i></div>
+            <h3 class="service__title">Afeitado Tradicional</h3>
+            <p class="service__desc">Navaja + toalla caliente, suave y preciso.</p>
+            <div class="service__meta">
+              <span class="pill">$150 MXN</span>
+              <span class="pill pill--muted">20 min</span>
+            </div>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-crown"></i></div>
+            <h3 class="service__title">Corte + Barba (Combo)</h3>
+            <p class="service__desc">El paquete completo para verte impecable.</p>
+            <div class="service__meta">
+              <span class="pill">$400 MXN</span>
+              <span class="pill pill--muted">55 min</span>
+            </div>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></div>
+            <h3 class="service__title">Tinte de Barba</h3>
+            <p class="service__desc">Uniforma el tono y resalta la textura natural.</p>
+            <div class="service__meta">
+              <span class="pill">$100 MXN</span>
+              <span class="pill pill--muted">15 min</span>
+            </div>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service__icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></div>
+            <h3 class="service__title">Masaje Facial</h3>
+            <p class="service__desc">Relajación rápida para cerrar con broche de oro.</p>
+            <div class="service__meta">
+              <span class="pill">$80 MXN</span>
+              <span class="pill pill--muted">10 min</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="galeria" aria-label="Galería">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Galería</h2>
+          <p class="section__subtitle">Trabajos recientes: cortes, fades, barbas y acabados tradicionales.</p>
+        </header>
+
+        <div class="gallery-grid" role="list">
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2001%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 1">
+            <img class="gallery__img" loading="lazy" alt="Corte clásico con acabado limpio" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E01%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2002%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 2">
+            <img class="gallery__img" loading="lazy" alt="Fade con textura y terminados" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E02%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2003%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 3">
+            <img class="gallery__img" loading="lazy" alt="Barba perfilada con navaja" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E03%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2004%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 4">
+            <img class="gallery__img" loading="lazy" alt="Corte moderno con degradado" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E04%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2005%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 5">
+            <img class="gallery__img" loading="lazy" alt="Afeitado tradicional con toalla caliente" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E05%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2006%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 6">
+            <img class="gallery__img" loading="lazy" alt="Detalle de barba y bigote" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E06%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2007%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 7">
+            <img class="gallery__img" loading="lazy" alt="Textura en peinado con cera" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E07%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2008%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 8">
+            <img class="gallery__img" loading="lazy" alt="Degradado bajo con línea marcada" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'1'%20x2%3D'0'%20y1%3D'1'%20y2%3D'0'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E08%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+
+          <button class="gallery-item reveal" type="button" data-lightbox data-src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'1200'%20height%3D'800'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%230f0f0f'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'48'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EGaler%C3%ADa%2009%3C/text%3E%3C/svg%3E" aria-label="Abrir imagen 9">
+            <img class="gallery__img" loading="lazy" alt="Corte y barba estilo tradicional" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'600'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'34'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3E09%3C/text%3E%3C/svg%3E" />
+            <span class="gallery__overlay" aria-hidden="true"><span class="gallery__label">Ver</span></span>
+          </button>
+        </div>
+      </div>
+
+      <dialog class="lightbox" data-lightbox-dialog aria-label="Vista ampliada">
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <img class="lightbox__img" data-lightbox-img alt="Imagen ampliada" />
+      </dialog>
+    </section>
+
+    <section class="section" id="nosotros" aria-label="Sobre Nosotros">
+      <div class="container">
+        <div class="about">
+          <div class="about__media reveal">
+            <img class="about__img" loading="lazy" alt="Barbero trabajando en un corte" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'900'%20height%3D'1100'%3E%3Cdefs%3E%3ClinearGradient%20id%3D'g'%20x1%3D'0'%20x2%3D'1'%20y1%3D'0'%20y2%3D'1'%3E%3Cstop%20offset%3D'0'%20stop-color%3D'%231a1a1a'/%3E%3Cstop%20offset%3D'1'%20stop-color%3D'%23d4af37'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'url(%23g)'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'44'%20fill%3D'%23ffffff'%20opacity%3D'0.9'%3EEquipo%3C/text%3E%3C/svg%3E" />
+          </div>
+
+          <div class="about__content reveal">
+            <h2 class="section__title">Sobre Nosotros</h2>
+            <p>Somos una barbería de estilo clásico en Guadalajara, enfocada en la precisión y la experiencia completa: consulta rápida, detalles finos y un ambiente cómodo.</p>
+            <p>Con años de práctica, combinamos técnicas tradicionales con tendencias modernas. Cada corte y cada barba se trabaja con intención: simetría, limpieza y estilo personal.</p>
+            <p>Nuestra filosofía es simple: que salgas viendo mejor, sintiéndote mejor y con ganas de volver.</p>
+
+            <div class="about__social" aria-label="Redes sociales">
+              <a class="icon-link" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="https://wa.me/+5216241234567?text=Hola%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              </a>
+              <a class="icon-link" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__num">8+</span>
+                <span class="stat__label">Años de experiencia</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">1,500+</span>
+                <span class="stat__label">Clientes satisfechos</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">5.0</span>
+                <span class="stat__label">Rating promedio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reservas" aria-label="Reservar tu Cita">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Reservar tu Cita</h2>
+          <p class="section__subtitle">Elige día y hora disponibles. Recibirás confirmación inmediata.</p>
+        </header>
+
+        <div class="booking reveal" role="region" aria-label="Agenda">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DGrz7whIDIUezKM7kJkcE5-M_1OK6sn3L2aol_qDiQCWJbfg80sbjrCcGYZzq_NroK59el6hQ?gv=true',
+                color: '#E4C441',
+                label: 'Programar una cita',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+
+        <p class="note reveal">
+          Si el calendario no carga,
+          <a class="link" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DGrz7whIDIUezKM7kJkcE5-M_1OK6sn3L2aol_qDiQCWJbfg80sbjrCcGYZzq_NroK59el6hQ?gv=true" target="_blank" rel="noopener">abre la agenda en una nueva pestaña</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="testimonios" aria-label="Testimonios">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Testimonios</h2>
+          <p class="section__subtitle">Opiniones reales de clientes que vuelven por el detalle.</p>
+        </header>
+
+        <div class="testimonials">
+          <article class="card testimonial reveal">
+            <div class="testimonial__top">
+              <img class="avatar" alt="Foto de cliente" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'200'%20height%3D'200'%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%231a1a1a'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'26'%20fill%3D'%23d4af37'%3EL%3C/text%3E%3C/svg%3E" />
+              <div>
+                <h3 class="testimonial__name">Luis M.</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial__text">“Excelente servicio. El perfilado de barba quedó perfecto y el lugar se siente muy pro.”</p>
+          </article>
+
+          <article class="card testimonial reveal">
+            <div class="testimonial__top">
+              <img class="avatar" alt="Foto de cliente" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'200'%20height%3D'200'%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%231a1a1a'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'26'%20fill%3D'%23d4af37'%3EA%3C/text%3E%3C/svg%3E" />
+              <div>
+                <h3 class="testimonial__name">Andrés P.</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial__text">“Agendé desde el celular en segundos. El corte quedó igual que la referencia.”</p>
+          </article>
+
+          <article class="card testimonial reveal">
+            <div class="testimonial__top">
+              <img class="avatar" alt="Foto de cliente" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D'http%3A//www.w3.org/2000/svg'%20width%3D'200'%20height%3D'200'%3E%3Crect%20width%3D'100%25'%20height%3D'100%25'%20fill%3D'%231a1a1a'/%3E%3Ctext%20x%3D'50%25'%20y%3D'50%25'%20dominant-baseline%3D'middle'%20text-anchor%3D'middle'%20font-family%3D'Arial'%20font-size%3D'26'%20fill%3D'%23d4af37'%3ES%3C/text%3E%3C/svg%3E" />
+              <div>
+                <h3 class="testimonial__name">Sergio R.</h3>
+                <div class="stars" aria-label="5 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="testimonial__text">“Me gustó el detalle del afeitado tradicional. 100% recomendado.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" aria-label="Contacto">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Contacto</h2>
+          <p class="section__subtitle">¿Prefieres escribirnos? Te respondemos rápido.</p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="info-card">
+              <h3 class="info-card__title">Visítanos</h3>
+              <p class="info-card__text">Av. Ejemplo 123, Col. Centro, Guadalajara, Jal.</p>
+              <a class="btn btn--ghost btn--block" href="https://www.google.com/maps" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            </div>
+
+            <div class="info-card">
+              <h3 class="info-card__title">Llámanos / WhatsApp</h3>
+              <p class="info-card__text"><a class="link" href="tel:+523312345678">+52 33 1234 5678</a></p>
+              <p class="info-card__text"><a class="link" href="https://wa.me/+5216241234567?text=Hola%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">WhatsApp</a></p>
+            </div>
+
+            <div class="info-card">
+              <h3 class="info-card__title">Horario</h3>
+              <p class="info-card__text">Lunes a Sábado: 10:00 am – 8:00 pm</p>
+              <p class="info-card__text">Domingo: Cerrado</p>
+            </div>
+          </div>
+
+          <form class="card form reveal" id="contact-form" action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde Barber Shop Elite" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form__grid">
+              <div class="field">
+                <label class="label" for="name">Nombre</label>
+                <input class="input" id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+                <p class="error" data-error-for="name" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+                <p class="error" data-error-for="email" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label class="label" for="phone">Teléfono</label>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" required minlength="8" />
+                <p class="error" data-error-for="phone" aria-live="polite"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="label" for="message">Mensaje</label>
+                <textarea class="input textarea" id="message" name="message" rows="5" required minlength="10"></textarea>
+                <p class="error" data-error-for="message" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <button class="btn btn--gold btn--lg btn--block" type="submit">Enviar Mensaje</button>
+            <p class="form__hint">Al enviar aceptas que te contactemos con la información proporcionada.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Barber Shop Elite</span>
+        </a>
+        <p class="footer__copy">© <span id="year"></span> Barber Shop Elite. Todos los derechos reservados.</p>
+      </div>
+
+      <div class="footer__links" aria-label="Links rápidos">
+        <a class="footer__link" href="#servicios">Servicios</a>
+        <a class="footer__link" href="#contacto">Contacto</a>
+        <a class="footer__link" href="#">Política de Privacidad</a>
+      </div>
+
+      <div class="footer__social" aria-label="Redes">
+        <a class="icon-link" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a class="icon-link" href="https://wa.me/+5216241234567?text=Hola%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a class="icon-link" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/+5216241234567?text=Hola%20quiero%20agendar%20una%20cita" id="whatsapp-btn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp para agendar">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

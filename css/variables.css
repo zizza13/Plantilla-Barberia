@@ -1,0 +1,30 @@
+:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #d4af37;
+  --color-accent: #ffffff;
+  --color-bg: #0f0f0f;
+  --color-surface: #141414;
+  --color-surface-2: #101010;
+  --color-border: rgba(255, 255, 255, 0.10);
+  --color-muted: rgba(255, 255, 255, 0.72);
+  --color-muted-2: rgba(255, 255, 255, 0.60);
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.30);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --container: 1160px;
+  --header-h: 80px;
+
+  --font-title: "Playfair Display", serif;
+  --font-body: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  --fs-hero: clamp(2.2rem, 3.5vw, 3.8rem);
+  --fs-h2: clamp(1.7rem, 2.6vw, 2.4rem);
+  --fs-h3: clamp(1.15rem, 1.6vw, 1.35rem);
+  --fs-body: clamp(1rem, 1.2vw, 1.05rem);
+
+  --ease: 0.3s ease;
+}
