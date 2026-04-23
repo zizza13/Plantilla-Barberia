@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,6 +16,11 @@ body {
   color: var(--color-accent);
   line-height: 1.6;
   font-size: var(--fs-body);
+  overflow-x: hidden;
+}
+
+body.is-nav-open {
+  overflow: hidden;
 }
 
 img {

@@ -46,6 +46,7 @@
     top: var(--header-h);
     right: 0;
     width: min(86vw, 360px);
+    max-width: 100vw;
     height: calc(100dvh - var(--header-h));
     flex-direction: column;
     align-items: stretch;
@@ -53,7 +54,7 @@
     gap: 10px;
     background: rgba(10, 10, 10, 0.92);
     border-left: 1px solid rgba(255, 255, 255, 0.10);
-    transform: translateX(110%);
+    transform: translateX(100%);
     transition: transform var(--ease);
     z-index: 1600;
     overflow: auto;
