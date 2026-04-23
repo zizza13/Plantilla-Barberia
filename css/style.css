@@ -796,3 +796,91 @@ textarea {
   opacity: 1;
   transform: translateY(0);
 }
+
+.social-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.social-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.social-menu.is-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  box-shadow: var(--shadow);
+  transition: transform var(--ease);
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-btn--whatsapp {
+  background: #25d366;
+}
+
+.social-btn--instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social-btn--facebook {
+  background: #1877f2;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.social-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #1877f2;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+  transition: background var(--ease), transform var(--ease);
+}
+
+.social-toggle:hover {
+  background: #146be6;
+  transform: scale(1.1);
+}
+
+.social-toggle-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-toggle.is-open .social-toggle-icon {
+  transform: rotate(45deg);
+}

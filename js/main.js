@@ -181,4 +181,21 @@
       }
     });
   }
+
+  const socialToggle = document.getElementById('social-toggle');
+  const socialMenu = document.getElementById('social-menu');
+  let socialIsOpen = false;
+
+  if (socialToggle && socialMenu) {
+    socialToggle.addEventListener('click', () => {
+      socialIsOpen = !socialIsOpen;
+      if (socialIsOpen) {
+        socialMenu.classList.add('is-open');
+        socialToggle.classList.add('is-open');
+      } else {
+        socialMenu.classList.remove('is-open');
+        socialToggle.classList.remove('is-open');
+      }
+    });
+  }
 })();
