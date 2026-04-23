@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdftzHQQSgVj4J2b6Z6vZtqG0NfWQv7r7F0p3s0b4aU2m9o1mG0x8mN2o8dD7wQv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
   <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
@@ -49,11 +49,14 @@
   </header>
 
   <main id="inicio" class="main">
-    <section class="hero" aria-label="Presentación">
+    <section class="hero reveal" aria-label="Presentación">
+  
+      <div class="hero__bg" aria-hidden="true"></div>
+
       <div class="container hero__inner">
         <div class="hero__content reveal">
           <p class="eyebrow">Guadalajara, Jalisco</p>
-          <h1 class="hero__title">BARBER SHOP <span class="hero__title-accent">ELITE</span></h1>
+          <h1 class="hero__title">BARBER SHOP <span class="hero__title-accent">ELITE</span> <img class="hero__icon" src="images/barber_icon.png" alt="Icono de barbero" onerror="this.style.display='none'" /></h1>
           <p class="hero__subtitle">Estilo. Precisión. Tradición.</p>
           <div class="hero__actions">
             <a class="btn btn--gold btn--lg" href="#reservas">Agendar Cita Ahora</a>
@@ -74,7 +77,7 @@
         <div class="hero__card reveal" aria-label="Información destacada">
           <div class="hero-card__row">
             <span class="hero-card__label">Reserva en 1 minuto</span>
-            <span class="hero-card__value">Google Calendar</span>
+            <span class="hero-card__value">En 3 clicks</span>
           </div>
           <div class="hero-card__row">
             <span class="hero-card__label">Cortes desde</span>
@@ -87,10 +90,9 @@
           <a class="btn btn--gold btn--block" href="#reservas">Reservar</a>
         </div>
       </div>
-      <div class="hero__bg" aria-hidden="true"></div>
-    </section>
 
-    <section class="section" id="servicios" aria-label="Servicios">
+    </section>
+    <section class="section reveal" id="servicios" aria-label="Servicios">
       <div class="container">
         <header class="section__header reveal">
           <h2 class="section__title">Servicios</h2>
@@ -161,7 +163,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="galeria" aria-label="Galería">
+    <section class="section section--alt reveal" id="galeria" aria-label="Galería">
       <div class="container">
         <header class="section__header reveal">
           <h2 class="section__title">Galería</h2>
@@ -224,7 +226,7 @@
       </dialog>
     </section>
 
-    <section class="section" id="nosotros" aria-label="Sobre Nosotros">
+    <section class="section reveal" id="nosotros" aria-label="Sobre Nosotros">
       <div class="container">
         <div class="about">
           <div class="about__media reveal">
@@ -268,7 +270,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" id="reservas" aria-label="Reservar tu Cita">
+    <section class="section section--alt reveal" id="reservas" aria-label="Reservar tu Cita">
       <div class="container">
         <header class="section__header reveal">
           <h2 class="section__title">Reservar tu Cita</h2>
@@ -293,14 +295,10 @@
           <!-- end Google Calendar Appointment Scheduling -->
         </div>
 
-        <p class="note reveal">
-          Si el calendario no carga,
-          <a class="link" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DGrz7whIDIUezKM7kJkcE5-M_1OK6sn3L2aol_qDiQCWJbfg80sbjrCcGYZzq_NroK59el6hQ?gv=true" target="_blank" rel="noopener">abre la agenda en una nueva pestaña</a>.
-        </p>
       </div>
     </section>
 
-    <section class="section" id="testimonios" aria-label="Testimonios">
+    <section class="section reveal" id="testimonios" aria-label="Testimonios">
       <div class="container">
         <header class="section__header reveal">
           <h2 class="section__title">Testimonios</h2>
@@ -362,7 +360,7 @@
       </div>
     </section>
 
-    <section class="section" id="contacto" aria-label="Contacto">
+    <section class="section reveal" id="contacto" aria-label="Contacto">
       <div class="container">
         <header class="section__header reveal">
           <h2 class="section__title">Contacto</h2>

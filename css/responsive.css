@@ -35,8 +35,10 @@
 
   .nav-toggle {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .hero__icon {
+    display: none;
   }
 
   .nav {
@@ -54,6 +56,8 @@
     transform: translateX(110%);
     transition: transform var(--ease);
     z-index: 1600;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav.is-open {
@@ -95,5 +99,15 @@
 
   .hero {
     padding-top: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav {
+    transition: none !important;
+  }
+
+  .reveal {
+    transition: none !important;
   }
 }

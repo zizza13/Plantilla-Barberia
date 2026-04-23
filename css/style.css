@@ -130,6 +130,10 @@ textarea {
   min-width: 44px;
   min-height: 44px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .nav-toggle__bar {
@@ -138,10 +142,20 @@ textarea {
   height: 2px;
   background: var(--color-accent);
   border-radius: 2px;
+  transition: transform var(--ease), opacity var(--ease);
+  transform-origin: center;
 }
 
-.nav-toggle__bar + .nav-toggle__bar {
-  margin-top: 5px;
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .backdrop {
@@ -239,6 +253,16 @@ textarea {
   font-size: var(--fs-hero);
   line-height: 1.1;
   letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-left: 8px;
 }
 
 .hero__title-accent {
@@ -738,7 +762,7 @@ textarea {
   height: 56px;
   border-radius: 999px;
   background: #25d366;
-  color: #000;
+  color: #fff;
   display: grid;
   place-items: center;
   box-shadow: var(--shadow);
@@ -753,6 +777,7 @@ textarea {
 
 #whatsapp-btn i {
   font-size: 1.6rem;
+  line-height: 1;
 }
 
 .reveal {

@@ -1,5 +1,10 @@
 (function () {
-  const HEADER_OFFSET = 80;
+  const headerEl = document.querySelector('.header');
+
+  function getHeaderOffset() {
+    if (!headerEl) return 80;
+    return headerEl.getBoundingClientRect().height || 80;
+  }
 
   const nav = document.getElementById('site-nav');
   const navToggle = document.querySelector('.nav-toggle');
@@ -42,7 +47,7 @@
       e.preventDefault();
       closeNav();
 
-      const y = target.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+      const y = target.getBoundingClientRect().top + window.scrollY - getHeaderOffset();
       window.scrollTo({ top: y, behavior: 'smooth' });
     });
   });
