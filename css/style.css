@@ -585,6 +585,9 @@ textarea {
 .booking {
   width: min(100%, 800px);
   margin-inline: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
 }
 
 .note {
