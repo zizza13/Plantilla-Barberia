@@ -860,8 +860,8 @@ textarea {
   width: 56px;
   height: 56px;
   border-radius: 999px;
-  background: #1877f2;
-  color: #fff;
+  background: var(--color-secondary);
+  color: #000;
   display: grid;
   place-items: center;
   box-shadow: var(--shadow);
@@ -871,7 +871,7 @@ textarea {
 }
 
 .social-toggle:hover {
-  background: #146be6;
+  background: #c9a030;
   transform: scale(1.1);
 }
 
